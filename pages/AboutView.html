@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel = "shortcut icon" href="../assets/icons/imgWindow.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gonzalo Ocampo TP</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="shortcut icon" href="../assets/icons/imgWindow.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap"
+            rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gonzalo Ocampo TP</title>
+    </head>
 
 <body>
-    <header class="header">
-    <div class="logo">
-        <a href="#">
-            <img src="../assets/images/logo.gif" 
-            width="60" height="60" alt="Error">    
-        </a>
-    </div> 
-    <nav class="navBaseHeader , navModelHeader">
-        <ul class="navUlHeader">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./NewsView.html">News</a></li>
-            <li class="currentView"><a href="./AboutView.html">About</a></li>
-            <li><a href="./Music.html">Music</a></li>
-            <li><a href="./Contact.html">Contact</a></li>
-        </ul>
-    </nav>   
+    <header class="container-fluid">
+        <div class="row h-100 mx-auto d-flex align-items-center">
+            <div class="rounded h-25 col-xxl-2 col-lg-2 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center">
+                <img src="../assets/images/logo.gif"  class="img-fluid d-flex resizeLogo" alt="Error">
+            </div>
+            
+            <nav class="navbar navbar-expand-lg col-xxl-10 col-lg-10 col-xs-12 mx-auto d-flex bgAlphaNavColor rounded">
+                <div class="container-fluid">   
+                <button class="navbar-toggler navbar-toggler" 
+                   type="button" 
+                   data-bs-toggle="collapse" 
+                   data-bs-target="#navbarSupportedContent"
+                   aria-controls="navbarSupportedContent" 
+                   aria-expanded="false" 
+                   aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex">
+                      <li class="nav-item">
+                        <a class="nav-link nav-linkCustomColor active navbar-custom-text" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link nav-linkCustomColor navbar-custom-text" href="../pages/NewsView.html">News</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link nav-linkCustomColor navbar-custom-text" href="../pages/AboutView.html">About</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link  nav-linkCustomColor dropdown-toggle navbar-custom-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Music
+                        </a>
+                        <ul class="dropdown-menu  nav-linkCustomColor main-navbar-custom-dropdowm-item-color">
+                          <li><a class="dropdown-item navbar-custom-text main-navbar-custom-dropdowm-text-color " href="../pages/Music.html">Releases</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item navbar-custom-text main-navbar-custom-dropdowm-text-color" href="../pages/Music.html">Podcast</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link nav-linkCustomColor navbar-custom-text" href="../pages/Contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
     </header>
     <main class="main">
         <div id="fixDisplayBug">
@@ -82,23 +115,27 @@
         </section>
     </div>
     </main>
-    <footer class="footer">
-        <nav class="navBaseFooter , navModelFooter">
-            <ul class="navUlFooter">
-                <li class="removeLinkProperties">
-                    <a href="https://www.instagram.com" target="_blank">
-                    <img src="../assets/icons/instagram.svg" width="30" height="30" alt="Error">    
-                    </a></li>
-                <li class="removeLinkProperties">
-                    <a href="https://www.spotify.com"target="_blank">
-                    <img src="../assets/icons/spotify.svg" width="30" height="30" alt="Error">    
-                    </a></li>
-                <li class="removeLinkProperties">
-                    <a href="https://www.soundcloud.com" target="_blank">
-                    <img src="../assets/icons/soundcloud.svg" width="30" height="30" alt="Error">    
-                    </a></li>
-            </ul>
-        </nav>       
-    </footer>
+    <footer class="container-fluid text-cente ">
+        <div class="row d-flex">
+            <div class="col bg-opacity-0 d-flex justify-content-center align-items-center">
+                  <a button type="button" class="btn btn-with-imageInstagram align-items-center justify-content-center footerImgcustomSize"
+                  href="https://www.instagram.com" target="_blank">
+                  </a> 
+            </div>
+            <div class="col bg-opacity-0  d-flex justify-content-center align-items-center">
+                <a button type="button" class="btn  btn-with-imageSpotify align-items-center justify-content-center footerImgcustomSize"
+                href="https:/www.spotify.com" target="_blank">
+                </a> 
+          </div>
+          <div class="col bg-opacity-0 d-flex justify-content-center align-items-center">
+            <a button type="button" class="btn btn-with-imageSoundCloud align-items-center justify-content-center footerImgcustomSize"
+            href="https:/www.soundcloud.com" target="_blank">
+            </a> 
+      </div>
+        </div>
+</footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 </html>
