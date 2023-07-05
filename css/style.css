@@ -270,6 +270,16 @@ scale: 4;
 
 }
 
+.main-text-about-custom{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    align-self: center;
+    background-color: #00000051;
+}
+
     /* Media query para pantallas pequeñas */
   @media (max-width: 764px) {
 
@@ -298,6 +308,7 @@ scale: 4;
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
+
 
     /* #cubeDesginTitle{
     display: none;} */
