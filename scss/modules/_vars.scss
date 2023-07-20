@@ -8,7 +8,7 @@ $widthBtnBase: 10px;
 $colorBase: #ffffff;
 
 $fontDefault: "Roboto", sans-serif;
-$fontWeightDefault:lighter;
+$fontWeightDefault: lighter;
 $fontSizeDefault: 2rem;
 
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -30,35 +30,10 @@ $estilosStruct: (
     _remSize : $remDefault
 );
 
-@mixin getStructModel($name , $id)
-{ 
+@mixin getStructModel($name , $id) {
     @include map-get($name , $id);
 }
 
-@mixin setColorGenericImportant($colorValue)
-{
-    color : $colorValue;
+@mixin setColorGenericImportant($colorValue) {
+    color: $colorValue;
 }
-
-// .boton {
-//     width: 200px;
-//     height: 50px;
-//     background-color: white;
-//     text-align: center;
-//     color: black;
-//     border-radius: 20px;
-//     border: 1px solid black;
-// }
-
-// .boton--aceptar {
-//     @extend .boton;
-//     background-color: green;
-//     color: yellow;
-// }
-
-// .boton--cancelar {
-//     @extend .boton;
-//     background-color: red;
-//     color: yellow;
-// }
-

@@ -1,25 +1,79 @@
-@mixin currentDevice($vista) {
-    @if $vista ==desktop {
-        @media only screen and (min-width:1024px) {
-            // Aplico algo 
-        }
+@mixin setBigDevice() {
+    .resizeLogo {
+        @include setScale(0.4);
     }
 
-    @else if $vista ==tablet {
-        @media only screen and (min-width: 764px) and (max-width: 992px) {
-            // Aplico algo 
-        }
+    .reSizeImgCarrousel {
+        @include setHeight(250px);
+        @include setScale(1.5);
+    }
+}
+
+@mixin setMediumDevice() {
+
+    .resizeLogo {
+        @include setScale(0.08);
     }
 
-    @else if $vista ==mobile {
-        @media only screen and (max-width: 764px) {
-            // Aplico algo 
-        }
+    .reSizeCarrouselContainer {
+        @include setWidth(50%);
     }
 
-    @else {
-        h1 {
-            font-size: 1rem;
-        }
+    .reSizeImgCarrousel {
+        @include setHeight(190px);
+        @include setScale(2);
+    }
+
+    .textNotice {
+        grid-area: textNotice;
+        @include setDysplayGender("grid");
+        grid-template-rows: 50%, 50%, 50%;
+        grid-template-areas:
+            "mainTextTitleDesign cubeDesginTitle"
+            " cubeDesginTitle"
+            "main2TextTitleDesign";
+        @include setGridColumnGap(30px);
+        @include setGridRowGap(30px);
+    }
+}
+
+@mixin setSmallDevice() {
+    .resizeLogo {
+        @include setScale(0.09);
+    }
+
+    .reSizeCarrouselContainer {
+        @include setWidth(100%);
+    }
+
+    .reSizeImgCarrousel {
+        @include setHeight(200px);
+        @include setScale(2);
+    }
+
+    .textNotice {
+        grid-area: textNotice;
+        @include setDysplayGender("grid");
+        grid-template-rows: 50%, 50%, 50%;
+        grid-template-areas:
+            "mainTextTitleDesign cubeDesginTitle"
+            " cubeDesginTitle"
+            "main2TextTitleDesign";
+        @include setGridColumnGap(5px);
+        @include setGridRowGap(5px);
+    }
+}
+
+@mixin currentDevice() {
+    @media only screen and (min-width:992px) {
+        @include setBigDevice();
+    }
+
+    @media only screen and (min-width: 764px) and (max-width: 992px) {
+        @include setMediumDevice();
+    }
+
+    @media only screen and (max-width: 764px) {
+        @include setSmallDevice();
     }
 }

@@ -2,7 +2,6 @@ $borderDefault : 0.5px solid black;
 $borderDefault2 : 2px solid black;
 $borderDefault3 : 1.5px solid rgba(0, 0, 0, 0.409);
 
-@mixin setBorders($borderValues: $borderDefault)
-{
+@mixin setBorders($borderValues: $borderDefault) {
     border: $borderValues;
 }

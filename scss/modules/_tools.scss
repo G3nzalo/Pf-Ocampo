@@ -1,6 +1,4 @@
-
-@mixin callForTool($index , $to)
-{
+@mixin callForTool($index , $to) {
     @for $i from index through $to {
         .col-#{$i} {
             width: 10% * $i;
@@ -8,8 +6,4 @@
     }
 }
 
-@mixin callEach($index , $to)
-{
-
-}
-
+@mixin callEach($index , $to) {}

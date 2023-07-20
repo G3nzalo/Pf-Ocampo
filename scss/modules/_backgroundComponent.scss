@@ -24,11 +24,11 @@ $backgroundStyleID1: (
     background-repeat: map-get($backgroundStyleID1 , _repeat);
     background-size: map-get($backgroundStyleID1 , _size);
     background-attachment: map-get($backgroundStyleID1 , _attachment);
-    background-position: map-get(backgroundStyleID1, _position);
+    background-position: map-get($backgroundStyleID1, _position);
 }
 
-@mixin SetBackgrounColorGeneric($currentColor) {
-    background-color: $currentColor;
+@mixin setBackgrounColorGeneric($currentColor) {
+    background-color: $currentColor
 }
 
 // Generic Img Backgroun Btn 
@@ -50,7 +50,6 @@ $backgroundGradient: linear-gradient(90deg, rgba(2, 0, 36, 0.358) 0%,
         rgba(89, 165, 191, 0.262) 64%, rgba(82, 187, 228, 0.423) 71%,
         rgba(34, 143, 186, 0.482) 100%);
 
-@mixin setBackgrounGradient($someGradient: $backgroundGradient)
-{
+@mixin setBackgrounGradient($someGradient: $backgroundGradient) {
     background: $someGradient;
 }

@@ -3,30 +3,5 @@ $mainVH : 175vh;
 $fontSizeMain : 2rem;
 $widthCustomCarrousel : 50%;
 $widthCustomImgCarrousel : 60%;
-
-
-main {
-    @include setHeight($mainVH);
-}
-
-.bgColorTextMain {
-    @include setBackgrounColorGeneric($backgroundColorCurrent);
-}
-
-.bgColorTextMainLogo {
-    @include setBackgrounColorGeneric($backgroundColorCurrent);
-}
-
-.custom-text-main-logo {
-    @include setFontFamily($fontDefault);
-    @include setFontWeight($fontTypeLight);
-    @include setFontSize($fontSizeMain);
-}
-
-.reSizeCarrouselContainer {
-    @include setWidth($widthCustomCarrousel);
-}
-
-.reSizeImgCarrousel {
-    @include setWidth($widthCustomImgCarrousel);
-}
+$backgrounColorTextGeneric : #ffffff58;
+$backgroundColorTxtMainLogo : #399fb951;

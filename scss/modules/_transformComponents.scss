@@ -1,26 +1,22 @@
 //Transform Components
 
-@mixin setOverflow($overflowValue)
-{
+@mixin setOverflow($overflowValue) {
     overflow: $overflowValue;
 }
 
-@mixin setZ($zIndexValue)
-{
+@mixin setZ($zIndexValue) {
     z-index: $zIndexValue;
 }
 
-@mixin setMargin($marginValue)
-{
+@mixin setMargin($marginValue) {
     margin: $marginValue
 }
-@mixin setPadding($paddingValue)
-{
-    padding : $paddingValue;
+
+@mixin setPadding($paddingValue) {
+    padding: $paddingValue;
 }
 
-@mixin setBoxSizing($boxSizingValue)
-{
+@mixin setBoxSizing($boxSizingValue) {
     box-sizing: $boxSizingValue;
 }
 
@@ -35,8 +31,7 @@
     @include setCustomizableSize($currentScale $currentWidth, $currentHeight);
 }
 
-@mixin setPositionType($positionType)
-{
+@mixin setPositionType($positionType) {
     position: $positionType;
 }
 
@@ -46,18 +41,15 @@
     justify-content: $justify ;
 }
 
-@mixin setJustifyModel($justifyType)
-{
+@mixin setJustifyModel($justifyType) {
     justify-content: $justifyType;
 }
 
-@mixin setAlignItems($alignItemsType)
-{
+@mixin setAlignItems($alignItemsType) {
     align-items: $alignItemsType;
 }
 
-@mixin setAlignSelf($alignSelfType)
-{
+@mixin setAlignSelf($alignSelfType) {
     align-self: $alignSelfType;
 
 }
