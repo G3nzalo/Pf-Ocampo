@@ -32,7 +32,8 @@ header{
 }
 
 .nav-linkCustomColor {
-  color: rgba(255, 255, 255, 0.768) !important;
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold !important;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
