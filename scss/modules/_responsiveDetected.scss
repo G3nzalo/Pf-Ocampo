@@ -1,0 +1,25 @@
+@mixin currentDevice($vista) {
+    @if $vista ==desktop {
+        @media only screen and (min-width:1024px) {
+            // Aplico algo 
+        }
+    }
+
+    @else if $vista ==tablet {
+        @media only screen and (min-width: 764px) and (max-width: 992px) {
+            // Aplico algo 
+        }
+    }
+
+    @else if $vista ==mobile {
+        @media only screen and (max-width: 764px) {
+            // Aplico algo 
+        }
+    }
+
+    @else {
+        h1 {
+            font-size: 1rem;
+        }
+    }
+}

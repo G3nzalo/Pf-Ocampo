@@ -1,5 +1,49 @@
-// Test
-$width-btn: 10px;
-$color-btn: #0000ff;
-$font-default: "Roboto", sans-serif;
-$testvarible: $width-btn;
+
+$widthBtnBase: 10px;
+$colorBtnBase: #ffffff;
+$fontDefault: "Roboto", sans-serif;
+$box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+
+$vista: mobile;
+$h1Desktop: 3rem;
+$h1Mobile: 1.2rem;
+
+
+$color: black;
+$position: center;
+$fontSize: 35px;
+$rem : 1rem;
+
+$estilosStruct: (
+    _color: $color,
+    _positionTxtAlign: $position,
+    _fontSize: $fontSize,
+    _remSize : $rem
+);
+
+@mixin getStructModel($name , $id)
+{ 
+    @include map-get($name , $id);
+}
+
+.boton {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.boton--aceptar {
+    @extend .boton;
+    background-color: green;
+    color: yellow;
+}
+
+.boton--cancelar {
+    @extend .boton;
+    background-color: red;
+    color: yellow;
+}
