@@ -35,6 +35,11 @@
     @include setCustomizableSize($currentScale $currentWidth, $currentHeight);
 }
 
+@mixin setPositionType($positionType)
+{
+    position: $positionType;
+}
+
 @mixin setFlexPosition ($display : flex, $flexDirection: row, $justify: center) {
     display: $display;
     flex-direction: $flexDirection;

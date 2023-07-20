@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .boton, .boton--aceptar, .boton--cancelar {
   width: 200px;
   height: 50px;
@@ -14,3 +15,88 @@
 .boton--cancelar {
   background-color: red;
   color: yellow; }
+=======
+<<<<<<< Updated upstream
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("https://wallpaperaccess.com/full/1253802.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+
+header {
+  height: 30vh;
+  overflow: "auto";
+  background-color: #399fb951; }
+
+.bgAlphaNavColor {
+  background-color: colorBlack; }
+
+.nav-linkCustomColor {
+  background-color: white;
+  font-weight: "bold";
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out; }
+
+.navbar-toggler {
+  position: "relative";
+  z-index: 9999; }
+
+.navbar-custom-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: "lighter";
+  font-size: 1 rem; }
+
+.main-navbar-custom-dropdowm-text-color {
+  font-weight: "bold";
+  background-color: #000000;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out; }
+
+.main-navbar-custom-dropdowm-item-color {
+  background-color: rgba(43, 157, 218, 0.423); }
+
+/* Home Main */
+main {
+  height: 175vh; }
+
+.bgColorTextMain {
+  background-color: #399fb951; }
+
+.bgColorTextMainLogo {
+  background-color: #399fb951; }
+
+.custom-text-main-logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: "lighter";
+  font-size: 2rem; }
+
+.reSizeCarrouselContainer {
+  width: 50%; }
+
+.reSizeImgCarrousel {
+  width: 60%; }
+
+footer {
+  height: 10vh; }
+
+.footerImgcustomSize {
+  scale: 4; }
+
+.btn-with-imageInstagram {
+  background: url("../assets/icons/instagram.svg") no-repeat center center;
+  background-size: cover/reSizeDivided; }
+
+.btn-with-imageSpotify {
+  background: url("../assets/icons/spotify.svg") no-repeat center center;
+  background-size: cover/reSizeDivided; }
+
+.btn-with-imageSoundCloud {
+  background: url("../assets/icons/soundcloud.svg") no-repeat center center;
+  background-size: cover/reSizeDivided; }
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes

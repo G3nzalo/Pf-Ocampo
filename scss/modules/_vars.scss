@@ -1,6 +1,11 @@
+// Test
+$width-btn: 10px;
+$color-btn: #0000ff;
+$font-default: "Roboto", sans-serif;
+$testvarible: $width-btn;
 
 $widthBtnBase: 10px;
-$colorBtnBase: #ffffff;
+$colorBase: #ffffff;
 
 $fontDefault: "Roboto", sans-serif;
 $fontWeightDefault:lighter;
@@ -35,24 +40,25 @@ $estilosStruct: (
     color : $colorValue;
 }
 
-.boton {
-    width: 200px;
-    height: 50px;
-    background-color: white;
-    text-align: center;
-    color: black;
-    border-radius: 20px;
-    border: 1px solid black;
-}
+// .boton {
+//     width: 200px;
+//     height: 50px;
+//     background-color: white;
+//     text-align: center;
+//     color: black;
+//     border-radius: 20px;
+//     border: 1px solid black;
+// }
 
-.boton--aceptar {
-    @extend .boton;
-    background-color: green;
-    color: yellow;
-}
+// .boton--aceptar {
+//     @extend .boton;
+//     background-color: green;
+//     color: yellow;
+// }
 
-.boton--cancelar {
-    @extend .boton;
-    background-color: red;
-    color: yellow;
-}
+// .boton--cancelar {
+//     @extend .boton;
+//     background-color: red;
+//     color: yellow;
+// }
+

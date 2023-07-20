@@ -1,0 +1,58 @@
+$headerVH :30vh;
+
+$overFlowCurrent: "auto";
+
+$backgroundColorCurrent: #399fb951;
+$backgroundColorAlphaNav: #19191a48;
+$backgroundColorDropDownItem : rgba(43, 157, 218, 0.423) ;
+$colorBlack: #000000 ;
+$colorWhite: rgb(255, 255, 255) ;
+
+$zIndexCurrent: 9999;
+$positionCurrent : "relative";
+
+
+@mixin headerInitialize() {
+    @include setHeight($headerVH);
+    @include setOverflow($overFlowCurrent);
+    @include setBackgrounColorGeneric($backgroundColorCurrent);
+}
+
+@mixin transitionModel() {
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+header {
+    @include headerInitialize();
+}
+
+.bgAlphaNavColor {
+    @include setBackgrounColorGeneric(colorBlack);
+}
+
+.nav-linkCustomColor {
+    @include setBackgrounColorGeneric($colorWhite);
+    @include setFontWeight($fontTypeBold);
+    @include transitionModel();
+}
+
+.navbar-toggler {
+    @include setPositionType($positionCurrent);
+    @include setZ($zIndexCurrent);
+}
+
+.navbar-custom-text {
+    @include setFontFamily($fontDefault);
+    @include setFontWeight($fontTypeLight);
+    @include setFontSize($fontSizeDefault);
+}
+
+.main-navbar-custom-dropdowm-text-color {
+    @include setFontWeight($fontTypeBold);
+    @include setBackgrounColorGeneric($colorBlack);
+    @include transitionModel();
+}
+
+.main-navbar-custom-dropdowm-item-color {
+    @include setBackgrounColorGeneric($backgroundColorDropDownItem);
+}

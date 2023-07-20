@@ -1,0 +1,25 @@
+$footerVH : 10vh;
+$customScaleFooter: 4;
+
+footer {
+    @include setHeight($footerVH);
+}
+
+.footerImgcustomSize {
+    @include setScale($customScaleFooter);
+}
+
+.btn-with-imageInstagram {
+    @include setBackgroundImgBtn($urlIDInstagram);
+    @include setBackgroundImgBtnSizeCover();
+}
+
+.btn-with-imageSpotify {
+    @include setBackgroundImgBtn($urlIDSpotify);
+    @include setBackgroundImgBtnSizeCover();
+}
+
+.btn-with-imageSoundCloud {
+    @include setBackgroundImgBtn($urlIDSoundCloud);
+    @include setBackgroundImgBtnSizeCover();
+}

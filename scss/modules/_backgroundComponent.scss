@@ -18,7 +18,7 @@ $backgroundStyleID1: (
     @include map-get($name , $id);
 }
 
-@mixin setBackground($marginValue) {
+@mixin setBackground() {
     height: map-get($backgroundStyleID1 , _heigh);
     background-image: map-get($backgroundStyleID1 , _imageSource);
     background-repeat: map-get($backgroundStyleID1 , _repeat);
@@ -40,7 +40,7 @@ $urlIDSoundCloud : url('../assets/icons/soundcloud.svg') no-repeat center center
     background: $url;
 }
 
-@mixin setBackgroundImgBtn($reSizeDivided : 2) {
+@mixin setBackgroundImgBtnSizeCover($reSizeDivided : 2) {
     background-size: cover/reSizeDivided;
 }
 
