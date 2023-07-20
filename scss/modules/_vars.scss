@@ -1,7 +1,11 @@
 
 $widthBtnBase: 10px;
 $colorBtnBase: #ffffff;
+
 $fontDefault: "Roboto", sans-serif;
+$fontWeightDefault:lighter;
+$fontSizeDefault: 2rem;
+
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 
 $vista: mobile;
@@ -9,21 +13,26 @@ $h1Desktop: 3rem;
 $h1Mobile: 1.2rem;
 
 
-$color: black;
-$position: center;
-$fontSize: 35px;
-$rem : 1rem;
+$colorDefault: black;
+$positionDefault: center;
+$fontSizeDefault: 35px;
+$remDefault : 1rem;
 
 $estilosStruct: (
-    _color: $color,
-    _positionTxtAlign: $position,
-    _fontSize: $fontSize,
-    _remSize : $rem
+    _color: $colorDefault,
+    _positionTxtAlign: $positionDefault,
+    _fontSize: $fontSizeDefault,
+    _remSize : $remDefault
 );
 
 @mixin getStructModel($name , $id)
 { 
     @include map-get($name , $id);
+}
+
+@mixin setColorGenericImportant($colorValue)
+{
+    color : $colorValue;
 }
 
 .boton {

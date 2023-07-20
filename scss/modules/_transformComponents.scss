@@ -1,3 +1,15 @@
+//Transform Components
+
+@mixin setOverflow($overflowValue)
+{
+    overflow: $overflowValue;
+}
+
+@mixin setZ($zIndexValue)
+{
+    z-index: $zIndexValue;
+}
+
 @mixin setMargin($marginValue)
 {
     margin: $marginValue
@@ -5,6 +17,11 @@
 @mixin setPadding($paddingValue)
 {
     padding : $paddingValue;
+}
+
+@mixin setBoxSizing($boxSizingValue)
+{
+    box-sizing: $boxSizingValue;
 }
 
 @mixin sizes($width, $height) {
@@ -22,6 +39,22 @@
     display: $display;
     flex-direction: $flexDirection;
     justify-content: $justify ;
+}
+
+@mixin setJustifyModel($justifyType)
+{
+    justify-content: $justifyType;
+}
+
+@mixin setAlignItems($alignItemsType)
+{
+    align-items: $alignItemsType;
+}
+
+@mixin setAlignSelf($alignSelfType)
+{
+    align-self: $alignSelfType;
+
 }
 
 @mixin customizableSize($currentScale : 1, $currentWidth: 1, $currentHeight: 1) {
@@ -59,18 +92,3 @@
 @mixin setDysplayGender($displayGender: "grid") {
     grid-area: $displayGender;
 }
-
-@mixin callForTool($index , $to)
-{
-    @for $i from index through $to {
-        .col-#{$i} {
-            width: 10% * $i;
-        }
-    }
-}
-
-@mixin callEach($index , $to)
-{
-
-}
-

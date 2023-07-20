@@ -1,0 +1,16 @@
+@mixin setFontWeight($fontWeight)
+{
+    font-weight : $fontWeight;
+}
+
+@mixin setFontSize($fontSize)
+{
+    font-size : $fontSize;
+}
+
+@mixin SentFontFamily($fontFamily)
+{
+    // Example
+    //  font-family: 'Roboto', sans-serif;
+    font-family: $fontFamily;
+}
