@@ -71,6 +71,21 @@ main {
   font-size: 2rem;
 }
 
+.bgColorTextMainCarrousel {
+  background-color: #000000c9;
+}
+
+.bgColorCarrousel {
+  background-color: #000000;
+}
+
+.custom-text-carrousel {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-size: 2rem;
+  color: white;
+}
+
 .reSizeCarrouselContainer {
   width: 50%;
 }
@@ -305,12 +320,25 @@ footer {
 /* Media query para pantallas pequeñas */
 @media (max-width: 764px) {
 
+  .resizeText{
+    font-size: 1rem;
+  }
+
+  .resizeTextAbout{
+    font-size: 0.8rem;
+  }
+
   .resizeLogo {
     scale: 0.09
   }
 
   .reSizeCarrouselContainer {
     width: 100%;
+  }
+
+  .reSizeImgAbout {
+    height: 150px;
+    scale: 1;
   }
 
   .reSizeImgCarrousel {
@@ -336,6 +364,9 @@ footer {
 
 @media (min-width: 764px) and (max-width: 992px) {
 
+  .resizeText{
+    font-size: 1rem;
+  }
   .resizeLogo {
     scale: 0.08
   }
@@ -347,6 +378,11 @@ footer {
   .reSizeImgCarrousel {
     height: 190px;
     scale: 2;
+  }
+
+  .reSizeImgAbout {
+    height: 200px;
+    scale: 0.8;
   }
 
   .textNotice {
@@ -372,5 +408,9 @@ footer {
   .reSizeImgCarrousel {
     height: 250px;
     scale: 1.5;
+  }
+
+  .reSizeImgAbout {
+    scale: 0.8;
   }
 }
